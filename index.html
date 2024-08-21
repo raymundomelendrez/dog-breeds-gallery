@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dog Breeds Gallery</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="app">
+        <h1>Dog Breeds Gallery</h1>
+        <button id="fetch-breeds">Load Dog Breeds</button>
+        <div class="loader" id="loader" hidden></div>
+        <div class="container" id="breed-container">
+            <!-- Dog breeds will be displayed here -->
+        </div>
+    </div>
+
+    <!-- Breed Information Modal -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2 id="modal-breed-name"></h2>
+            <img id="modal-breed-image" src="" alt="" />
+            <p id="modal-breed-info">Loading breed information...</p>
+            <div id="modal-additional-images">
+                <!-- Additional images will be displayed here -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Full-Size Image Modal -->
+    <div id="image-modal" class="modal">
+        <span class="close" id="close-image-modal">&times;</span>
+        <img class="modal-content" id="full-size-image">
+    </div>
+
+    <!-- External Scripts -->
+    <script src="script.js"></script>
+</body>
+</html>
